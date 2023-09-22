@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Stopwatch</title>
+    <!--Bootstrap CSS File-->
+    <link href="../../__Resources__/bootstrap-5.2.3/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Fontawesome CSS File-->
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+          type="text/css"/>
+    <!--Bootstrap Js File-->
+    <script src="../../__Resources__/bootstrap-5.2.3/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom CSS File-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="position-absolute text-white w-100 text-center">
+   <h1>11 <sup>th</sup> Project | 40 Project Challenge</h1>
+</div>
+<div class="container-fluid d-flex w-100 min-vh-100 bg-info justify-content-center align-items-center">
+    <div class="stopwatch_outer d-flex align-items-center justify-content-center">
+        <p class="text-center" id="textDisplay"><span id="seconds">00</span>:<small class="text-muted" id="tens">000</small></p>
+    </div>
+</div>
+<div class="w-100 d-flex justify-content-center gap-2" id="btn-groups">
+    <button class="custom-btn" id="start"><i class="fal fa-play"></i></button>
+    <button class="custom-btn" id="pause"><i class="fal fa-pause"></i></button>
+    <button class="custom-btn" id="reset"><i class="fal fa-stop"></i></button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
